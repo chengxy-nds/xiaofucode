@@ -1,5 +1,5 @@
 ---
-home: true
+home: true 
 title: 主页
 heroImage: https://firebook.oss-cn-beijing.aliyuncs.com/62fcb0bde4b09067d4d31dfb.png
 heroText: 程序员小富
@@ -7,19 +7,19 @@ tagline: 小富整两句：这是一个通俗易懂的程序员学习指南，�
 actions:
       - text: 🚀 开始卷 =>
         link: /guide/getstarted/start
-        type: orange
+        type: blue
 features:
 - title: FIRE 开源项目
   icon: origin
   details: 基于springboot、springcloud、vue、nuxt 前后端分离的开源项目，新手练手刚刚好 
   link: /guide/introduce.html
-- title: 效率至上
+- title: 分库分表 sharding-jdbc
   icon: effective
   details: 只需要简单配置即可生成方法的api请求，从而节省大量时间
   link: /guide/getstarted/start.html
-- title: 功能丰富
+- title: FIRE BOOK
   icon: features
-  details: 一键生成url和参数、脚本、api导出到postman、SearchEveryWhere搜索、发送API请求、下载文件、存储历史请求,各种功能一应俱全
+  details: 一个程序员必备的资源站
   link: /guide/feature.html
   
 head:

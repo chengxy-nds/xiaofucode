@@ -2,29 +2,11 @@ const {defineHopeConfig} = require("vuepress-theme-hope");
 const {comment} = require("vuepress-plugin-comment2");
 
 module.exports = defineHopeConfig({
-    plugins: [
-        [
-            '@vuepress/docsearch',
-            {
-                appId: "8FRYEU6KK8",
-                apiKey: '84f513df1e83406ba42179da778d87b4',
-                indexName: 'dromara-fast-request',
-                locales: {
-                    '/': {
-                        placeholder: '搜索',
-                        translations: {
-                            button: {
-                                buttonText: '搜索',
-                            },
-                        },
-                    },
-                },
-            },
-        ],
-
-    ],
+    // 网站访问根路径
     base: '/',
+    // 网站名称
     title: '程序员小富',
+    // SEO
     head: [
         [
             'link',
@@ -50,6 +32,7 @@ module.exports = defineHopeConfig({
             lang: 'zh-CN',
         },
     },
+    // 主题的配置  报错header 和 侧边栏
     themeConfig: {
         repo: "https://github.com/dromara/fast-request",
         repoLabel: "GitHub",
@@ -108,7 +91,7 @@ module.exports = defineHopeConfig({
                     {
                         text: '首页',
                         link: '/guide/',
-                        icon: "index"
+                        icon: "number"
                     },
                     {
                         text: '快速开始',
@@ -139,21 +122,21 @@ module.exports = defineHopeConfig({
                 sidebar: {
                     '/guide/': [
                         "introduce",
-                        {
-                            text: "快速上手",
-                            icon: "leibie",
-                            prefix: "getstarted/",
-                            collapsable: true,
-                            children: [
-                                "start",
-                                "projectEnv",
-                                "dataMapping",
-                                "stringGenerationStrategy",
-                                "icon",
-                                "otherConfig",
-                                "shortcut"
-                            ],
-                        },
+                        // {
+                        //     text: "快速上手",
+                        //     icon: "leibie",
+                        //     prefix: "getstarted/",
+                        //     collapsable: true,
+                        //     children: [
+                        //         "start",
+                        //         "projectEnv",
+                        //         "dataMapping",
+                        //         "stringGenerationStrategy",
+                        //         "icon",
+                        //         "otherConfig",
+                        //         "shortcut"
+                        //     ],
+                        // },
                         "install",
                         "feature",
                         "script",
@@ -161,11 +144,32 @@ module.exports = defineHopeConfig({
                         "history",
                         "buy",
                         "concatGroup",
-                        "teachingVideo",
                         "faq"
                     ],
                 }
             }
         }
-    }
+    },
+    // 插件配置 现在有一个全文检索插件
+    plugins: [
+        [
+            '@vuepress/docsearch',
+            {
+                appId: "8FRYEU6KK8",
+                apiKey: '84f513df1e83406ba42179da778d87b4',
+                indexName: 'dromara-fast-request',
+                locales: {
+                    '/': {
+                        placeholder: '搜索',
+                        translations: {
+                            button: {
+                                buttonText: '搜索',
+                            },
+                        },
+                    },
+                },
+            },
+        ],
+
+    ]
 })
