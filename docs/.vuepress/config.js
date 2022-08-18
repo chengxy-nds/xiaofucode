@@ -90,7 +90,7 @@ module.exports = defineHopeConfig({
                 navbar: [
                     {
                         text: '首页',
-                        link: '/guide/',
+                        link: '/',
                         icon: "number"
                     },
                     {

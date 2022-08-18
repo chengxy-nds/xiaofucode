@@ -7,13 +7,13 @@ tagline: 小富整两句：这是一个通俗易懂的程序员学习指南，�
 actions:
       - text: 🚀 开始卷 =>
         link: /guide/getstarted/start
-        type: blue
+        type: primary
 features:
 - title: FIRE 开源项目
   icon: origin
   details: 基于springboot、springcloud、vue、nuxt 前后端分离的开源项目，新手练手刚刚好 
   link: /guide/introduce.html
-- title: 分库分表 sharding-jdbc
+- title: 享学分库分表 sharding-jdbc
   icon: effective
   details: 只需要简单配置即可生成方法的api请求，从而节省大量时间
   link: /guide/getstarted/start.html
@@ -71,6 +71,8 @@ head:
 
 - [阅读更多](https://mp.weixin.qq.com/s/rRypyd-ipelJAgB9WNv_dA)
 
+
+
 ## 📚 书籍资源 
 
 
@@ -102,13 +104,7 @@ head:
 :::
 
 
-::: tip 注意  
-请确保你的 IDEA版本 版本 >= 2020.3+
+## 🔥 关于作者
 
-插件版本       | IDEA版本要求
-------------- | -------------
-2.0.0~2.1.3   | 2020.3+
-2022.1.4+     | 2021.2+
+大家好，我是小富，本站所有文章都是原创作者
 
-当然请如果插件有更新，请确保更新成最新版本
-:::
