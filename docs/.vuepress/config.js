@@ -3,7 +3,7 @@ const {comment} = require("vuepress-plugin-comment2");
 
 module.exports = defineHopeConfig({
     // 网站访问根路径
-    base: '/',
+    base: '/xiaofu',
     // 网站名称
     title: '程序员小富',
     // SEO
